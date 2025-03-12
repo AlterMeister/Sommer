@@ -51,6 +51,10 @@ int main(void) {
 
         printf("Received from client: %s\n", buffer);  // buffer就是结果了，可以用来解析
 
+        /*
+            
+        */
+
         // 如果接收到 "exit"，则退出
         if (strncmp(buffer, "exit", 4) == 0) {
             printf("Client requested to exit. Closing connection...\n");
